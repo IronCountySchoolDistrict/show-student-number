@@ -6,4 +6,4 @@
     psData.studentNumber = '~([Students]student_number)';
 </script>
 
-<script src="/scripts/show-student-number.js?23092834"></script>
+<script src="<!-- @echo IMAGE_SERVER_URL -->/scripts/show-student-number/main.js"></script>

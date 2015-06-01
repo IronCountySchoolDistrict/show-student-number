@@ -1,0 +1,19 @@
+{
+  "name": "show-student-number",
+  "version": "2.1.3",
+  "description": "Add the student's student_number to the header of the page on the PS guardian side.",
+  "main": "",
+  "scripts": {
+    "test": "mocha-casperjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IronCountySchoolDistrict/show-student-number.git"
+  },
+  "author": "IronCountySchoolDistrict",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "hhttps://github.com/IronCountySchoolDistrict/show-student-number/issues"
+  },
+  "homepage": "https://github.com/IronCountySchoolDistrict/show-student-number#readme"
+}
