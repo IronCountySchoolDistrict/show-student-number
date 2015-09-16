@@ -1,9 +1,20 @@
-
 <script>
-    if (!psData) {
-        var psData = {};
-    }
-    psData.studentNumber = '~([Students]student_number)';
+  if (!psData) {
+    var psData = {};
+  }
+  psData.studentNumber = '~([Students]student_number)';
 </script>
 
-<script src="<!-- @echo IMAGE_SERVER_URL -->/show-student-number/js/main.js"></script>
+<script>
+  $j(function() {
+    require.config({
+      paths: {
+        ssn: '/scripts/show-student-number/js/main'
+      }
+    });
+
+    require(['ssn'], function(ssn) {
+      ssn.main();
+    });
+  });
+</script>
