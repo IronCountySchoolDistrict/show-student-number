@@ -1,8 +1,6 @@
-export function main() {
-  var scriptHasRun = false;
-  if (!scriptHasRun) {
-    scriptHasRun = true;
-    var contentHeader = $j('#content').find('h1');
+(function($){
+  $(document).ready(function(){
+    var contentHeader = $('#content').find('h1');
     if (contentHeader.length > 0) {
       // If there is more than one header, just modify the first one.
       contentHeader = contentHeader.eq(0);
@@ -11,5 +9,5 @@ export function main() {
       var newText = currentText + addedText;
       contentHeader.text(newText);
     }
-  }
-}
+  })
+})($j);
