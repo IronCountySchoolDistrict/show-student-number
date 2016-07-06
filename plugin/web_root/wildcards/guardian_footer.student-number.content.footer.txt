@@ -5,16 +5,4 @@
   psData.studentNumber = '~([Students]student_number)';
 </script>
 
-<script>
-  $j(function() {
-    require.config({
-      paths: {
-        ssn: '/scripts/show-student-number/js/main'
-      }
-    });
-
-    require(['ssn'], function(ssn) {
-      ssn.main();
-    });
-  });
-</script>
+<script src="/scripts/show-student-number/js/main.js"></script>
