@@ -1,6 +1,6 @@
 {
   "name": "show-student-number",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add the student's student_number to the header of the page on the PS guardian side.",
   "main": "",
   "scripts": {
