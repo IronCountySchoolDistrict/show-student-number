@@ -1,8 +1,18 @@
 <script>
-  if (!psData) {
-    var psData = {};
-  }
-  psData.studentNumber = '~([Students]student_number)';
+  $j(() => {
+    if (!psData) {
+      var psData = {};
+    }
+    psData.studentNumber = '~([Students]student_number)';
+  
+    require.config({
+      paths: {
+        showStudentNumber: '/scripts/show-student-number/js/main'
+      }
+    });
+  
+    require(['showStudentNumber'], showStudentNumber => {
+      showStudentNumber.default(psData.studentNumber);
+    });
+  });
 </script>
-
-<script src="/scripts/show-student-number/js/main.js"></script>
