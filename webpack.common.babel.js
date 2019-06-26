@@ -12,7 +12,7 @@ const config = {
         hints: false
     },
     externals: {
-        jquery: 'jQuery'
+        jquery: 'jquery'
     },
     optimization: {
         splitChunks: {

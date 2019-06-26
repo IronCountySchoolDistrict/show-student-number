@@ -14,7 +14,9 @@ export default merge(common, {
     output: {
         path: path.resolve(__dirname, 'dist/web_root'),
         filename: `scripts/${module.exports.name}/js/[name].js`,
-        publicPath: 'https://ps.irondistrict.org' 
+        publicPath: 'https://ps.irondistrict.org',
+        library: "showStudentNumber",
+        libraryTarget: 'amd' 
     },
     module: {
         rules: [
